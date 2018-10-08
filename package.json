@@ -1,0 +1,40 @@
+{
+  "name": "loki",
+  "version": "0.0.1",
+  "description": "有象视频活动页",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://git.jc/elephant-h5/loki.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^7.1.3",
+    "babel-core": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "glob": "^7.1.2",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-clean-css": "^3.0.4",
+    "gulp-imagemin": "^3.2.0",
+    "gulp-livereload": "^3.8.1",
+    "gulp-postcss": "^7.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sourcemaps": "^2.6.1",
+    "gulp-stylelint": "^3.9.0",
+    "gulp-uglify": "^2.1.2",
+    "gulp-zip": "^4.0.0",
+    "postcss-plugins-px2rem": "^0.0.5",
+    "precss": "^2.0.0",
+    "rollup-plugin-babel": "^3.0.2",
+    "rollup-plugin-node-resolve": "^3.0.0",
+    "rollup-plugin-replace": "^1.1.1",
+    "rollup-stream": "^1.23.1",
+    "stylelint-config-standard": "^16.0.0",
+    "vinyl-source-stream": "^1.1.0"
+  }
+}

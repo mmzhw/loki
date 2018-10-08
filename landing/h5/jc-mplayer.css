@@ -1,0 +1,200 @@
+/* 所有按钮统一样式 */
+.vjs-melephant .vjs-control-bar button:before {
+  font-family: 'iconfont';
+  font-size: 44px;
+  line-height: 60px;
+  color: #fff;
+}
+
+/* control bar 高度位置 */
+.vjs-melephant .vjs-control-bar{
+  height: 60px;
+  color: #666666;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.7));
+}
+
+.vjs-melephant .vjs-control-bar .vjs-playing, .vjs-melephant .vjs-control-bar .vjs-paused {
+  margin-left: 20px;
+}
+/* 播放按钮 */
+.vjs-melephant .vjs-control-bar .vjs-playing:before {
+  content: '\e614';
+  color: #F0BD32;
+}
+
+/* 暂停按钮 */
+.vjs-melephant .vjs-control-bar .vjs-paused:before {
+  content: '\e603';
+  color: #F0BD32;
+}
+
+/* 加载中图片 */
+.vjs-melephant .vjs-m-fullscreen.vjs-melephant-loading .loading-gif {
+  width: 180px;
+  height: 180px;
+}
+
+/* 播放结束后 */
+.vjs-melephant .vjs-melephant-ended .content-wrap {
+  width: 314px;
+  height: 60px;
+  line-height: 60px;
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 30px;
+  text-align: center;
+}
+.vjs-melephant .vjs-melephant-ended i {
+  font-size: 30px;
+}
+.vjs-melephant .vjs-melephant-ended .end-text {
+  font-size: 24px;
+}
+
+/* 大播放按钮 */
+.vjs-melephant .vjs-big-play-button {
+  border: none;
+  background: rgba(0, 0, 0, 0.8);
+  width: 200px;
+  height: 60px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  line-height: 60px;
+  border-radius: 30px;
+  &:before {
+    left: -60px;
+  }
+  &:after {
+    content: '试看8 分钟';
+    display: block;
+    font-size: 24px;
+    line-height: 54px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 20px;
+    letter-spacing: -2px;
+  }
+}
+
+/* 全屏按钮 */
+.vjs-melephant .vjs-control-bar .vjs-fullscreen-control {
+  margin-right: 20px;
+}
+.vjs-melephant .vjs-control-bar .vjs-fullscreen-control:before {
+  content: '\e608';
+}
+
+/* 直播不隐藏进度条 */
+.vjs-live .vjs-progress-control {
+  display: block;
+}
+
+/* 让hover区域大点 */
+.vjs-melephant .vjs-progress-control.vjs-control {
+  height: 15px;
+}
+
+/* 进度条左右外边距 */
+.vjs-melephant .vjs-progress-control .vjs-progress-holder {
+  margin: 0;
+}
+
+/* 进度条 */
+.vjs-melephant .vjs-progress-control {
+  margin-top: 25px;
+}
+
+/* 进度条底色 */
+.vjs-melephant .vjs-progress-holder.vjs-slider {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+/* 进度条已加载 */
+.vjs-melephant .vjs-load-progress div {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/* 进度条已播放 */
+.vjs-melephant .vjs-play-progress {
+  background-color: #F0BD32;
+}
+
+/* 进度条已播放圆点 */
+.vjs-melephant .vjs-play-progress:before,
+.vjs-melephant .vjs-progress-control:hover .vjs-play-progress:before {
+  display: block;
+  color: #F0BD32;
+  font-size: 20px;
+  top: -7px;
+  background-color: #F0BD32;
+  border-radius: 100%;
+  box-shadow: 0 0 3px 0 rgba(0,0,0,0.50);
+}
+
+/* 鼠标移到进度条时间框 */
+.vjs-melephant .vjs-progress-control .vjs-mouse-display:after {
+  display: none;
+}
+
+/* 去掉默认已播放时间 */
+.vjs-melephant .vjs-progress-control:hover .vjs-play-progress:after {
+  display: none;
+}
+
+.vjs-melephant .vjs-current-time,
+.vjs-melephant .vjs-duration {
+  font-size: 14px;
+  display: flex;
+  font-size: 22px;
+  color: #fff;
+}
+
+/* 各个状态进度条 */
+.vjs-melephant .vjs-progress-holder,
+.vjs-melephant .vjs-load-progress,
+.vjs-melephant .vjs-play-progress.vjs-slider-bar,
+.vjs-melephant .vjs-progress-control .vjs-load-progress div {
+  height: 6px;
+}
+
+.vjs-melephant .vjs-progress-holder,
+.vjs-melephant .vjs-play-progress.vjs-slider-bar,
+.vjs-melephant .vjs-progress-control .vjs-load-progress div {
+  border-radius: 12px;
+}
+.vjs-melephant .vjs-load-progress {
+  border-radius: 12px 0 0 12px;
+}
+
+.vjs-melephant .vjs-m-fullscreen {
+  position: relative;
+  width: 100%;
+  height: 88%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.vjs-melephant .vjs-melephant-error .content-wrap {
+  text-align: center;
+}
+
+.vjs-melephant .vjs-m-fullscreen .error-text {
+  color: #fff;
+  font-size: 32px;
+}
+
+.vjs-melephant .vjs-m-fullscreen .error-reload {
+  color: #FABE00;
+  font-size: 24px;
+  margin-top: 28px;
+}
+
+.vjs-melephant .vjs-m-fullscreen .error-reload i {
+  font-size: 40px;
+  vertical-align: middle;
+  margin-right: 9px;
+}

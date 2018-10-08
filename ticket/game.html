@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name='viewport' content="width=750, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" href="img/logo-fav.png">
+  <title>王心凌喊你来看演唱会啦！</title>
+  <link href="dist/css/normalize.css" rel="stylesheet">
+  <link href="dist/css/common.css" rel="stylesheet">
+  <link href="dist/css/game.css" rel="stylesheet">
+</head>
+<body>
+  <audio id="audio" src="audio/bg-audio.mp3" autoplay loop></audio>
+  <div id="body-wrap">
+    <img class="logo" src="img/logo.png" alt="logo">
+    <div class="progress">
+      <img id="heart" class="heart" src="img/heart.png" style="left: 0px;" alt="heart">
+      <div class="progress-bar">
+        <div id="progress-content" style="width: 0px;"></div>
+      </div>
+    </div>
+    <div class="star-pic">
+      <div class="pic-corner">A</div>
+      <!--<img src="img/star-a.jpg" alt="">-->
+    </div>
+    <div class="click-area">
+      <button id="click-button" class="click-button"></button>
+      <!--<img class="lip lip-red" src="img/kiss-red.png" alt="">
+      <img class="lip lip-purple" src="img/kiss-purple.png" alt="">
+      <img class="lip lip-yellow" src="img/kiss-yellow.png" alt="">
+      <img class="lip lip-blue" src="img/kiss-blue.png" alt="">-->
+      <p class="click-note">点唇吻 送KISS</p>
+    </div>
+    <div id="alert-note">10个，对心凌的爱还不够哦！</div>
+  </div>
+  <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+  <script src="dist/js/common.min.js"></script>
+  <script src="dist/js/game.min.js"></script>
+</body>
+</html>

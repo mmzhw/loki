@@ -1,0 +1,179 @@
+/* 所有按钮统一样式 */
+.vjs-melephant .vjs-control-bar button:before {
+  font-family: 'iconfont';
+  font-size: 22px;
+  line-height: 30px;
+  color: #fff;
+}
+
+/* control bar 高度位置 */
+.vjs-melephant .vjs-control-bar{
+  height: 30px;
+  color: #666666;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.7));
+}
+
+.vjs-melephant .vjs-control-bar .vjs-playing, .vjs-melephant .vjs-control-bar .vjs-paused {
+  margin-left: 10px;
+}
+/* 播放按钮 */
+.vjs-melephant .vjs-control-bar .vjs-playing:before {
+  content: '\e614';
+  color: #F0BD32;
+}
+
+/* 暂停按钮 */
+.vjs-melephant .vjs-control-bar .vjs-paused:before {
+  content: '\e603';
+  color: #F0BD32;
+}
+
+/* 加载中图片 */
+.vjs-melephant .vjs-m-fullscreen.vjs-melephant-loading .loading-gif {
+  width: 90px;
+  height: 90px;
+}
+
+/* 播放结束后 */
+.vjs-melephant .vjs-melephant-ended .content-wrap {
+  width: 314px;
+  height: 30px;
+  line-height: 30px;
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 15px;
+  text-align: center;
+}
+.vjs-melephant .vjs-melephant-ended i {
+  font-size: 15px;
+}
+.vjs-melephant .vjs-melephant-ended .end-text {
+  font-size: 12px;
+}
+
+/* 大播放按钮 */
+.vjs-melephant .vjs-big-play-button {
+  border: none;
+  background: rgba(0, 0, 0, 0.8);
+  width: 0.8rem;
+  height: 0.8rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  line-height: 0.8rem;
+  border-radius: 50%;
+}
+
+/* 全屏按钮 */
+.vjs-melephant .vjs-control-bar .vjs-fullscreen-control {
+  margin-right: 10px;
+}
+.vjs-melephant .vjs-control-bar .vjs-fullscreen-control:before {
+  content: '\e608';
+}
+
+/* 让hover区域大点 */
+.vjs-melephant .vjs-progress-control.vjs-control {
+  height: 7px;
+}
+
+/* 进度条左右外边距 */
+.vjs-melephant .vjs-progress-control .vjs-progress-holder {
+  margin: 0;
+}
+
+/* 进度条 */
+.vjs-melephant .vjs-progress-control {
+  margin-top: 13px;
+}
+
+/* 进度条底色 */
+.vjs-melephant .vjs-progress-holder.vjs-slider {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+/* 进度条已加载 */
+.vjs-melephant .vjs-load-progress div {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/* 进度条已播放 */
+.vjs-melephant .vjs-play-progress {
+  background-color: #F0BD32;
+}
+
+/* 进度条已播放圆点 */
+.vjs-melephant .vjs-play-progress:before,
+.vjs-melephant .vjs-progress-control:hover .vjs-play-progress:before {
+  display: block;
+  color: #F0BD32;
+  font-size: 10px;
+  top: -4.5px;
+  background-color: #F0BD32;
+  border-radius: 100%;
+  box-shadow: 0 0 3px 0 rgba(0,0,0,0.50);
+}
+
+/* 鼠标移到进度条时间框 */
+.vjs-melephant .vjs-progress-control .vjs-mouse-display:after {
+  display: none;
+}
+
+/* 去掉默认已播放时间 */
+.vjs-melephant .vjs-progress-control:hover .vjs-play-progress:after {
+  display: none;
+}
+
+.vjs-melephant .vjs-current-time,
+.vjs-melephant .vjs-duration {
+  display: flex;
+  font-size: 11px;
+  color: #fff;
+}
+
+/* 各个状态进度条 */
+.vjs-melephant .vjs-progress-holder,
+.vjs-melephant .vjs-load-progress,
+.vjs-melephant .vjs-play-progress.vjs-slider-bar,
+.vjs-melephant .vjs-progress-control .vjs-load-progress div {
+  height: 2px;
+}
+
+.vjs-melephant .vjs-progress-holder,
+.vjs-melephant .vjs-play-progress.vjs-slider-bar,
+.vjs-melephant .vjs-progress-control .vjs-load-progress div {
+  border-radius: 12px;
+}
+.vjs-melephant .vjs-load-progress {
+  border-radius: 12px 0 0 12px;
+}
+
+.vjs-melephant .vjs-m-fullscreen {
+  position: relative;
+  width: 100%;
+  height: 88%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.vjs-melephant .vjs-melephant-error .content-wrap {
+  text-align: center;
+}
+
+.vjs-melephant .vjs-m-fullscreen .error-text {
+  color: #fff;
+  font-size: 16px;
+}
+
+.vjs-melephant .vjs-m-fullscreen .error-reload {
+  color: #FABE00;
+  font-size: 12px;
+  margin-top: 14px;
+}
+
+.vjs-melephant .vjs-m-fullscreen .error-reload i {
+  font-size: 20px;
+  vertical-align: middle;
+  margin-right: 9px;
+}

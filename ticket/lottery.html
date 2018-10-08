@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name='viewport' content="width=750, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" href="img/logo-fav.png">
+  <title>王心凌喊你来看演唱会啦！</title>
+  <link href="dist/css/normalize.css" rel="stylesheet">
+  <link href="dist/css/common.css" rel="stylesheet">
+  <link href="dist/css/lottery.css" rel="stylesheet">
+</head>
+<body>
+  <audio id="audio" src="audio/bg-audio.mp3" autoplay loop></audio>
+  <div id="body-wrap">
+    <img class="logo" src="img/logo.png" alt="logo">
+    <div class="before-lottery">
+      <div class="pic-wrap">
+        <img class="concert-pic" src="img/bg3.jpg" alt="">
+      </div>
+      <button class="lottery-click">点击抽奖</button>
+    </div>
+
+    <div class="after-lottery">
+      <div class="result-title">抽奖结果</div>
+      <div class="result-box">
+        <div class="no-lottery">
+          <img src="img/kiss-double.png" alt="">
+          <p>没抽中～送你个么么哒</p>
+        </div>
+        <div class="lottery-awards">
+          <img class="award-ticket" src="img/award-ticket.jpg" alt="">
+          <img class="award-cd" src="img/award-cd.jpg" alt="">
+          <img class="award-poster" src="img/award-poster.jpg" alt="">
+        </div>
+        <div class="lottery-awards-name"></div>
+      </div>
+      <div class="awards-info">
+        <div class="info-name">
+          <label>姓名</label>
+          <input class="username" type="text" name="username" value="" maxlength="6">
+        </div>
+        <div class="info-tel">
+          <label>电话</label>
+          <input class="tel" type="tel" name="tel" value="" maxlength="12">
+        </div>
+        <div class="info-address">
+          <label>地址</label>
+          <input class="address" type="text" name="address" value="" maxlength="50">
+        </div>
+        <p class="get-address">海报领取地址：浙江省杭州市登云路43号金城大厦1楼</p>
+        <p class="get-tel">联系方式：0571-88335639（工作日在线）</p>
+        <button class="confirm-button">确认领取</button>
+      </div>
+      <button class="get-awards">领取奖品</button>
+      <div class="qrcode-area">
+        <p>长按识别二维码 关注有象视频<br>我们会定期公布抽奖结果哦<br><span>(iOS系统若无法识别，请拉到页面底部重试)</span></p>
+        <i></i>
+        <img src="img/code.png" alt="">
+      </div>
+    </div>
+
+    <div class="lottery-mask">
+      <div class="lottery-loading">
+        <img src="img/loading.gif" alt="">
+        <p>抽奖中…</p>
+      </div>
+    </div>
+  </div>
+  <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+  <script src="dist/js/common.min.js"></script>
+  <script src="dist/js/ajax.min.js"></script>
+  <script src="dist/js/lottery.min.js"></script>
+</body>
+</html>

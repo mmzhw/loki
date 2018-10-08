@@ -1,0 +1,275 @@
+.goddess-wrap{
+  background: #5138a0;
+}
+.goddess {
+  width: 9.546666666666667rem;
+  padding-top: 0.48rem;
+  margin: 0 auto;
+}
+.goddess-head {
+  height: 2.4714285714285715rem;
+}
+.goddess-head h1 {
+  width: 9.426666666666666rem;
+  margin: 0;
+  text-align: center;
+  color: #fff;
+  font-weight: 400;
+  font-size: 0.7066666666666667rem;
+  line-height: 1.8933333333333333rem;
+  background-image: url('../image/icon-bg1.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.select-goddess {
+  height: 0.56rem;
+  margin: 0.3rem auto;
+  background-color: #714FDB;
+  background-size: 8.7rem 0.5333333333333333rem;
+  width: 7.6rem;
+  border-radius: 0.56rem;
+  background-repeat: no-repeat;
+}
+.select-goddess p {
+  margin: 0 auto;
+  text-align: center;
+  font-size: 0.30rem;
+  color: #fff;
+  line-height: 0.5333333333333333rem;
+}
+.select-goddess p span {
+  color: #FFE117;
+  font-size: 0.4266666666666667rem;
+}
+.select-goddess p span img {
+  width: 0.26666666666666666rem;
+  position: relative;
+  bottom: 0.3rem;
+  height: auto;
+}
+.activity-rule {
+  text-align: center;
+  color: #FFE117;
+  margin-top: 0.89333333333333335rem;
+  text-decoration: underline;
+  font-size: 0.3333333333333333rem;
+}
+// 投票模块样式
+.vote-wrap {
+  height: 10.933733333333333rem;
+  padding: 0.06666666666666667rem;
+  border: 1px solid #FFC11B;
+}
+.vote {
+  height: 100%;
+  margin-top: 0.6933333333333334rem;
+  background: #402986;
+  border-radius: 5px;
+}
+.vote-ticket {
+  height: 0.8rem;
+}
+.vote-ticket p {
+  float: right;
+  margin-right: 0.3466666666666667rem;
+  line-height: 0.8rem;
+  color: #A58BF7;
+  font-size: 11px;
+}
+.vote-goddess {
+  width: 9.026666666666667rem;
+  height: 9.906666666666666rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0rem auto;
+}
+.vote-content {
+  width: 2.6666666666666665rem;
+}
+.vote-activity {
+  width: 2.6666666666666665rem;
+  height: 3.3333333333333335rem;
+  position: relative;
+  background-size: 2.6666666666666665rem 3.3333333333333335rem;
+  background-repeat: no-repeat;
+}
+.nameplate {
+  background-image: url('../image/nameplate.png');
+}
+.lobster {
+  background-image: url('../image/lobster.png');
+}
+.show {
+  background-image: url('../image/show.png');
+}
+.show {
+  background-image: url('../image/show.png');
+}
+.private-chat {
+  background-image: url('../image/private-chat.png');
+}
+.water-war {
+  background-image: url('../image/water-war.png');
+}
+.pillow-war {
+  background-image: url('../image/pillow-war.png');
+}
+.vote-count {
+  width: 1.48rem;
+  height: 0.4rem;
+  float: right;
+  margin: 0.10666666666666667rem 0.10666666666666667rem 0 0;
+  background: #000;
+  opacity: 0.52;
+  border-radius: 0.2rem;
+  color: #fff;
+  line-height: 0.4rem;
+  text-align: center;
+}
+.vote-count p {
+  width: 1.87012987012987rem;
+  height: 0.6233766233766235rem;
+  position:relative;
+  right: 0.19506493506493505rem;
+  bottom: 0.11168831168831173rem;
+  text-align: center;
+  line-height: 0.6233766233766235rem;
+  -webkit-text-size-adjust:none;
+  transform: scale(0.64);
+  font-size: 0.32rem;
+}
+.activity-content {
+  width: 2.6666666666666665rem;
+  height: 0.5333333333333333rem;
+  text-align: center;
+  line-height: 0.5333333333333333rem;
+  color: #fff;
+  font-size: 10px;
+  position: absolute;
+  bottom: 0px;
+  background-image: url('../image/icon-bg3.png');
+  background-size: 2.6666666666666665rem 0.5333333333333333rem;
+}
+.activity-content p{
+  width: 3.3684210526315788rem;
+  height: 0.6736842105263158rem;
+  position:relative;
+  right: 0.3508771929824561rem;
+  bottom: 0.07017543859649122rem;
+  text-align: center;
+  line-height: 0.6736842105263158rem;
+  -webkit-text-size-adjust:none;
+  transform: scale(0.792);
+  font-size: 0.32rem;
+}
+.vote-add {
+  height: 2.826666666666667rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.96rem;
+  text-align: center;
+  color: #fff;
+  display:none;
+}
+.vote-btn {
+  width: 2.6666666666666665rem;
+  height: 0.7466666666666667rem;
+  margin-top: 0.14666666666666667rem;
+  color: #FFE9D7;
+  /*background: #FF9C1B;*/
+  background-image: url('../img/bbtn.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  font-size: 0.3333333333333333rem;
+  line-height: 0.7466666666666667rem;
+  text-align: center;
+}
+// 到场女神样式
+.present-goddess-title {
+  height: 1.8933333333333333rem;
+}
+.present-goddess-title h1 {
+  margin-top: 0.6130666666666666rem;
+}
+.present-goddess {
+  height: 7.36rem;
+  padding-bottom: 0.45rem;
+}
+.prev {
+  float: left;
+  height: 7rem;
+  width: 1rem;
+}
+.next {
+  float: right;
+  height: 7rem;
+  width: 1rem;
+}
+.prev img {
+  float: left;
+  margin-top: 2.5rem;
+}
+.next img {
+  float: right;
+  margin-top: 2.5rem;
+}
+.prev img, .next img{
+  width: 0.88rem;
+  height: 0.88rem;
+  height: auto;
+}
+.rotation {
+  width: 6.12rem;
+  height: 7.92rem;
+  overflow: hidden;
+  float: left;
+  margin-top: -1rem;
+  margin-left: 0.54rem;
+}
+.goddess-intro-wrap {
+  width: 48.96rem;
+  height: 7.92rem;
+  float: left;
+}
+.goddess-intro {
+  /*width: 2.4436363636363634rem;*/
+  width: 2.85rem;
+  margin: 0.56rem 0 0 0.41999999999999993rem;
+  float: left;
+}
+.goddess-intro img {
+  width: 2.1066666666666665rem;
+  height: 2.1066666666666665rem;
+  border-radius: 50%;
+}
+.goddess-intro:nth-child(2n+1){
+  margin-left: 0;
+}
+.subti {
+  font-size: 14px;
+  line-height: 0.7rem;
+}
+.goddess-intro .name {
+  height: 0.5333333333333333rem;
+  line-height: 0.5333333333333333rem;
+  color: #FFC08F;
+  text-align: center;
+  font-size: 0.37333333333333335rem;
+}
+.goddess-intro .size {
+  line-height: 0.43636363636363634rem;
+  text-align: center;
+  color: #FF838B;
+  -webkit-text-size-adjust:none;
+  transform: scale(0.916);
+  font-size: 0.32rem;
+}
+.goddess-intro img {
+  width: 2.1066666666666665rem;
+  margin-left: 0.3716666666666668rem;
+}
+// 抽奖机会弹窗样式

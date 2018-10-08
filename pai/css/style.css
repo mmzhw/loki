@@ -1,0 +1,50 @@
+.full-width {
+  width: 100%;
+  display: block;
+  .left {
+    display: block;
+    width: 371px;
+    float: left;
+  }
+  .right {
+    display: block;
+    width: 379px;
+  }
+}
+
+.video-wrap {
+  position: relative;
+  height: 354px;
+  .full-width {
+    position: absolute;
+  }
+  .video {
+    position: absolute;
+    width: 630px;
+    height: 354px;
+    border: none;
+    border-radius: 12px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    & > div {
+      border-radius: 13px;
+    }
+    video {
+      border-radius: 12px;
+    }
+    .vjs-control-bar {
+      border-radius: 0 0 12px 12px;
+    }
+  }
+}
+
+.app-share {
+  position: fixed;
+  right: 40px;
+  bottom: 40px;
+  a > img {
+    width: 71px;
+  }
+}
+

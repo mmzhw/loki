@@ -1,0 +1,56 @@
+.share {
+  font-size: 16px;
+  color: #BF9200;
+  text-align: center;
+  margin-top: 23px;
+  font-weight: 300; }
+
+.share-icon {
+  width: 16px;
+  position: absolute;
+  top: 17px;
+  right: 21px; }
+
+.success-box {
+  margin: 85px auto 0;
+  width: 317px;
+  padding: 35px 0;
+  border: 1px solid #F9BE00;
+  position: relative; }
+  .success-box .kiss {
+    width: 75px;
+    position: absolute;
+    top: -35px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%); }
+  .success-box h2 {
+    font-size: 25px;
+    color: #F9BE00;
+    text-align: center;
+    font-weight: normal; }
+  .success-box p {
+    font-size: 18px;
+    color: #FFF;
+    text-align: center;
+    margin-top: 8px; }
+
+.result {
+  margin-top: 68px;
+  font-size: 15px;
+  color: #BF9200;
+  text-align: center;
+  font-weight: 300;
+  line-height: 21px; }
+
+.triangle {
+  display: block;
+  margin: 6px auto 14px;
+  width: 14px; }
+
+.code {
+  display: block;
+  margin: -25px auto;
+  padding: 25px;
+  width: 130px; }

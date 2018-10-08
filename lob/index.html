@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
+  <meta content="telephone=no" name="format-detection" />
+  <title>612虾搞一波</title>
+  <link rel="stylesheet" href="css/iconfont.css">
+  <link rel="stylesheet" href="css/video.min.css">
+  <link rel="stylesheet" href="css/jc-mplayer.css">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/turntable.css">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/vote.css">
+  <script type="text/javascript" src='js/flexible.js'></script>
+</head>
+<body>
+<div class='wrap'>
+  <div class="step1">
+    <div class="playWrap">
+      <video class='video-js vjs-melephant' playsinline="playsinline" oncontextmenu="return false;"></video>
+    </div>
+    <!-- 次数悬浮窗口 -->
+    <div class="times-float" id="times-float">
+      <img src="./image/icon-times.png" alt="">
+      <p class="lottery-text">抽奖</p>
+      <p class="times">X<span class="the-times">0</span></p>
+    </div>
+  </div>
+  <div class="countdown">
+    <div class="countdownbg">
+      <div class="days">0</div>
+      <div class="hours">0</div>
+      <div class="mins">0</div>
+      <div class="secs">0</div>
+    </div>
+  </div>
+  <div class="goddess-wrap">
+    <div class="goddess">
+      <div class="goddess-head">
+        <h1>你想看什么，女神就做什么！</h1>
+        <div class="select-goddess">
+          <p>选出你最想要女神们PK的项目，投完票后<span>有惊喜<img src="./image/icon-bling.png" alt=""></span></p>
+        </div>
+      </div>
+      <p class="activity-rule" id="activity-rule">了解活动详细规则</p>
+      <div class="vote-wrap">
+        <div class="vote">
+          <div class="vote-ticket">
+            <p>您今天还有3票可投</p>
+          </div>
+          <div class="vote-goddess">
+            <div class="vote-content" data-id="">
+              <div class="vote-activity nameplate">
+                <div class="vote-count">
+                  <p class="nameplate-number">54321想看</p>
+                </div>
+                <div class="activity-content">
+                  <p class="activity-name">撕名牌</p>
+                </div>
+                <div class="vote-add">+1</div>
+              </div>
+              <div class="vote-btn">想 看</div>
+            </div>
+            <div class="vote-content">
+              <div class="vote-activity lobster">
+                <div class="vote-count">
+                  <p class="nameplate-number">54321想看</p>
+                </div>
+                <div class="activity-content">
+                  <p class="activity-name">吃龙虾</p>
+                </div>
+                <div class="vote-add">+1</div>
+              </div>
+              <div class="vote-btn">想 看</div>
+            </div>
+            <div class="vote-content">
+              <div class="vote-activity show">
+                <div class="vote-count">
+                  <p class="nameplate-number">54321想看</p>
+                </div>
+                <div class="activity-content">
+                  <p class="activity-name">时装秀</p>
+                </div>
+                <div class="vote-add">+1</div>
+              </div>
+              <div class="vote-btn">想 看</div>
+            </div>
+            <div class="vote-content">
+              <div class="vote-activity private-chat">
+                <div class="vote-count">
+                  <p class="nameplate-number">54321想看</p>
+                </div>
+                <div class="activity-content">
+                  <p class="activity-name">聊私密</p>
+                </div>
+                <div class="vote-add">+1</div>
+              </div>
+              <div class="vote-btn">想 看</div>
+            </div>
+            <div class="vote-content">
+              <div class="vote-activity water-war">
+                <div class="vote-count">
+                  <p class="nameplate-number">54321想看</p>
+                </div>
+                <div class="activity-content">
+                  <p class="activity-name">湿身水枪战</p>
+                </div>
+                <div class="vote-add">+1</div>
+              </div>
+              <div class="vote-btn">想 看</div>
+            </div>
+            <div class="vote-content">
+              <div class="vote-activity pillow-war">
+                <div class="vote-count">
+                  <p class="nameplate-number">54321想看</p>
+                </div>
+                <div class="activity-content">
+                  <p class="activity-name">睡衣枕头战</p>
+                </div>
+                <div class="vote-add">+1</div>
+              </div>
+              <div class="vote-btn">想 看</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="present-goddess-title goddess-head">
+        <h1>612，这些女神会到现场</h1>
+      </div>
+      <div class="present-goddess">
+        <div class="prev" id="prev">
+          <img src="./img/prev.png">
+        </div>
+        <div class="rotation">
+          <div class="goddess-intro-wrap" id="rotation" style="transform: translateX(0rem)">
+            <div class="goddess-intro">
+              <img src="./image/god1.png">
+              <div class="name">波多野结衣</div>
+              <div class="size">三围：88/59/95</div>
+            </div>
+            <div class="goddess-intro">
+              <img src="./image/god2.png">
+              <div class="name">天使萌</div>
+              <div class="size">三围：84/57/82</div>
+            </div>
+            <div class="goddess-intro">
+              <img src="./image/god3.png">
+              <div class="name">SASA</div>
+              <div class="size">三围：83/60/85</div>
+            </div>
+            <div class="goddess-intro">
+              <img src="./image/god4.png">
+              <div class="name">安吉饿霸</div>
+              <div class="size">三围：85/66/90</div>
+            </div>
+            <div class="goddess-intro">
+              <img src="./image/god5.png">
+              <div class="name">鹿小茜</div>
+              <div class="size">三围：86/64/90</div>
+            </div>
+            <div class="goddess-intro">
+              <img src="./image/god6.png">
+              <div class="name">汤圆儿</div>
+              <div class="size">三围：92/68/89</div>
+            </div>
+            <div class="goddess-intro">
+              <img src="./image/god7.png">
+              <div class="name">崔姗姗</div>
+              <div class="size">三围：89/62/90</div>
+            </div>
+            <div class="goddess-intro">
+              <img src="./image/god8.png">
+              <div class="name">skinny</div>
+              <div class="size">三围：87/62/90</div>
+            </div>
+            <div class="goddess-intro">
+              <img src="./image/god9.png">
+              <div class="name">陈安妮</div>
+              <div class="size">三围：87/63/88</div>
+            </div>
+            <div class="goddess-intro">
+              <img src="./image/god10.png">
+              <div class="name">何侣佳</div>
+              <div class="size">三围：90/62/89</div>
+            </div>
+            <div class="goddess-intro">
+              <img src="./image/god11.png">
+              <div class="name">兔兔</div>
+              <div class="size">三围：91/62/89</div>
+            </div>
+            <div class="goddess-intro">
+              <img src="./image/god12.png">
+              <div class="name">什么辰</div>
+              <div class="size">三围：86/60/90</div>
+            </div>
+            <div class="goddess-intro">
+              <img src="./image/god13.png">
+              <div class="name">蕾蕾</div>
+              <div class="size">三围：90/65/91</div>
+            </div>
+            <div class="goddess-intro">
+              <img src="./image/god14.png">
+              <div class="name">大圈圈</div>
+              <div class="size">三围：88/64/90</div>
+            </div>
+            <div class="goddess-intro">
+              <img src="./image/god15.png">
+              <div class="name">小肉粽</div>
+              <div class="size">三围：90/61/88</div>
+            </div>
+            <div class="goddess-intro">
+              <img src="./image/god16.png">
+              <div class="name">徐小喵</div>
+              <div class="size">三围：87/64/85</div>
+            </div>
+            <div class="goddess-intro">
+              <img src="./image/god17.png">
+              <div class="name">小火山</div>
+              <div class="size">三围：85/59/87</div>
+            </div>
+            <div class="goddess-intro">
+              <img src="./image/god18.png">
+              <div class="name">钱呆萌</div>
+              <div class="size">三围：86/67/90</div>
+            </div>
+            <div class="goddess-intro">
+              <img src="./image/god19.png">
+              <div class="name">杨乐宣</div>
+              <div class="size">三围：88/62/88</div>
+            </div>
+            <div class="goddess-intro">
+              <img src="./image/god20.png">
+              <div class="name">圆滚滚</div>
+              <div class="size">三围：88/65/90</div>
+            </div>
+            <div class="goddess-intro">
+              <img src="./image/god21.png">
+              <div class="name">朱思佳</div>
+              <div class="size">三围：88/64/90</div>
+            </div>
+            <div class="goddess-intro">
+              <img src="./image/god22.png">
+              <div class="name">雯雯</div>
+              <div class="size">三围：84/62/88</div>
+            </div>
+            <div class="goddess-intro">
+              <img src="./image/god23.png">
+              <div class="name">洪老师</div>
+              <div class="size">三围：89/64/92</div>
+            </div>
+            <div class="goddess-intro">
+              <img src="./image/god24.png">
+              <div class="name">李多多</div>
+              <div class="size">三围：87/63/91</div>
+            </div>
+            <div class="goddess-intro">
+              <img src="./image/god25.png">
+              <div class="name">小桃心</div>
+              <div class="size">三围：85/63/89</div>
+            </div>
+            <div class="goddess-intro">
+              <img src="./image/god26.png">
+              <div class="name">孙菲艳</div>
+              <div class="size">三围：86/63/90</div>
+            </div>
+            <div class="goddess-intro">
+              <img src="./image/god27.png">
+              <div class="name">苏格</div>
+              <div class="size">三围：85/63/91</div>
+            </div>
+            <div class="goddess-intro">
+              <img src="./image/god28.png">
+              <div class="name">张小闹</div>
+              <div class="size">三围：85/61/88</div>
+            </div>
+            <div class="goddess-intro">
+              <img src="./image/god29.png">
+              <div class="name">韵韵</div>
+              <div class="size">三围：86/63/89</div>
+            </div>
+            <div class="goddess-intro">
+              <img src="./image/god30.png">
+              <div class="name">馨宝</div>
+              <div class="size">三围：86/62/89</div>
+            </div>
+            <div class="goddess-intro">
+              <img src="./image/god31.png">
+              <div class="name">陈梦婷</div>
+              <div class="size">三围：86/63/90</div>
+            </div>
+            <div class="goddess-intro">
+              <img src="./image/god32.png">
+              <div class="name">谢梦馨</div>
+              <div class="size">三围：87/64/87</div>
+            </div>
+          </div>
+        </div>
+        <div class="next" id="next">
+          <img src="./img/next.png">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="zhuan">
+    <div class="list"></div>
+    <div class='left-times'>x<span>1</span></div>
+    <div class="turn">
+      <div class="turntable">
+        <div class="turntable-btn"></div>
+        <div class="pointer">
+        </div>
+      </div>
+      <div class="prizes">
+        <div class='inner'>
+          <p>特等奖：与波姐面对面亲密互动，包路费！！数量10</p>
+          <p>一等奖：DOBBY跟拍口袋只能折叠无人机，数量10</p>
+          <p>二等奖：612群星演唱会门票，数量20</p>
+          <p>三等奖：金诚太悦度假酒店1晚豪华湖景大床房，数量30</p>
+          <p>幸运奖：有象视频官方周边精美礼品，数量100</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="weibo">
+    <img src="./img/hot.png" class='hot' alt="">
+    <div class="weibo-title">在新浪微博中查找话题<span>#612有象虾搞一波#</span>并发表评论，同样有机会会被邀请来到现场……</div>
+    <div class="weibo-content">
+      <div class="weibo-item">
+        <div class="weibo-header clearfix">
+          <div class="weibo-face">
+            <img src="./face/face5.jpg" alt="">
+          </div>
+          <div class="weibo-from">
+            <div class="weibo-name">Echo</div>
+            <div class="weibo-device">6分钟前 来自 华为Ascend Mate7</div>
+          </div>
+        </div>
+        <div class="weibo-body">
+          <a class='topic' href='http://huati.weibo.com/k/612%E6%9C%89%E8%B1%A1%E8%99%BE%E6%90%9E%E4%B8%80%E6%B3%A2'>#女神喂我吃龙虾#</a>
+          <span class='content'>波姐——生推</span>
+        </div>
+        <div class="weibo-tools">
+          <a href="http://huati.weibo.com/k/612%E6%9C%89%E8%B1%A1%E8%99%BE%E6%90%9E%E4%B8%80%E6%B3%A2">
+            <span class="zhuanfa">转发</span>
+            <span class="comments">23</span>
+            <span class="likes">6</span>
+          </a>
+        </div>
+      </div>
+      <div class="weibo-item">
+        <div class="weibo-header clearfix">
+          <div class="weibo-face">
+            <img src="./face/face5.jpg" alt="">
+          </div>
+          <div class="weibo-from">
+            <div class="weibo-name">Echo</div>
+            <div class="weibo-device">6分钟前 来自 华为Ascend Mate7</div>
+          </div>
+        </div>
+        <div class="weibo-body">
+          <a class='topic' href='http://huati.weibo.com/k/612%E6%9C%89%E8%B1%A1%E8%99%BE%E6%90%9E%E4%B8%80%E6%B3%A2'>#女神喂我吃龙虾#</a>
+          <span class='content'>波姐——生推</span>
+        </div>
+        <div class="weibo-tools">
+          <a href="http://huati.weibo.com/k/612%E6%9C%89%E8%B1%A1%E8%99%BE%E6%90%9E%E4%B8%80%E6%B3%A2">
+            <span class="zhuanfa">转发</span>
+            <span class="comments">23</span>
+            <span class="likes">6</span>
+          </a>
+        </div>
+      </div>
+      <div class="weibo-item">
+        <div class="weibo-header clearfix">
+          <div class="weibo-face">
+            <img src="./face/face5.jpg" alt="">
+          </div>
+          <div class="weibo-from">
+            <div class="weibo-name">Echo</div>
+            <div class="weibo-device">6分钟前 来自 华为Ascend Mate7</div>
+          </div>
+        </div>
+        <div class="weibo-body">
+          <a class='topic' href='http://huati.weibo.com/k/612%E6%9C%89%E8%B1%A1%E8%99%BE%E6%90%9E%E4%B8%80%E6%B3%A2'>#女神喂我吃龙虾#</a>
+          <span class='content'>
+            <p>波多野结衣是谁？？？</p>
+            <p>天使萌是谁？？？？</p>
+            <p>我还是个孩纸啊~~~~~~~</p>
+          </span>
+        </div>
+        <div class="weibo-tools">
+          <a href="http://huati.weibo.com/k/612%E6%9C%89%E8%B1%A1%E8%99%BE%E6%90%9E%E4%B8%80%E6%B3%A2">
+            <span class="zhuanfa">转发</span>
+            <span class="comments">23</span>
+            <span class="likes">6</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="supporter">
+    <div class="supporterbg"></div>
+  </div>
+  <div class="footer">
+    <div class='aaa clearfix'>
+      <img src="./img/qrcode1.jpg" class='qrcode1' alt="">
+      <div class="gzh">关注“有象视频”公众号，查看最新中奖信息，还有更多龙虾节和波多野结衣的资讯</div>
+    </div>
+    <div class='bbb clearfix'>
+      <img src="./img/bottomlogo.png" class='qrcode2' alt="">
+      <div class='xzyx'>
+        <div class='downloadtext'>速速上车！！大“波”精彩，在有象视频app！</div>
+        <a class='downloadbtn' href="http://youxiangtv.com/m-index.html">下载有象视频app</a>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div id="mask"></div>
+    <!-- 抽奖及抽奖活动说明 -->
+    <div id="explanation" class="box">
+      <h1><div class="icon"></div>投票及抽奖活动说明<div class="icon"></div></h1>
+      <p>1、每完成1次投票后，即可获得一次抽奖机会</p>
+      <p>2、从6月6日-6月9日，进入此页面每天可获得3次投票机会</p>
+      <div id="close" class="btn big-yellow">关闭</div>
+    </div>
+    <!-- 抽奖机会 -->
+    <div id="lottery" class="box">
+      <h1>恭喜！您获得了1次抽奖机会</h1>
+      <img src="./image/icon-gift.png" alt="">
+      <div class="lottery-btn">
+        <div id="late" class="btn small-purple">晚点再说</div>
+        <div id="goLottery" class="btn small-yellow">去抽奖</div>
+      </div>
+    </div>
+    <!-- 获得奖品 -->
+    <div id="reward" class="box">
+      <div class="awards">
+        <img id="awards-image" src="./image/icon-prize0.png" alt="">
+      </div>
+      <h1>恭喜！中了<span id="award-name">最大的奖项!<span></h1>
+      <div>
+        <p id="reward_msg" class="reward_msg">612我们给你包路费，邀请你来盱眙龙虾节现场和波多野结衣、天使萌和众多女神面对面互动。据说全地球只有10个人能中奖哦～</p>
+        <p>请准确填写收货信息，以便工作人员联系并将奖品寄达您手上。</p>
+      </div>
+      <div id="writeMsgBtn" class="btn big-yellow">填写信息领奖</div>
+    </div>
+    <!-- 没有中奖 -->
+    <div id="no-reward" class="box">
+      <img src="./image/icon-noprize.png" alt="">
+      <p>波姐给了你一个鼓励的微笑继续加油哦～</p>
+      <div id="noRewardBtn" class="btn big-yellow">好的</div>
+    </div>
+    <!-- 填写信息 -->
+    <div id="writeMsg" class="box">
+      <h1>请填写准确的信息 ，好让我们的小姐姐把礼品准确无误的送到您手上</h1>
+      <p class="tel">
+        <label>手机号码</label>
+        <input id="tel" type='tel' maxlength="11">
+      </p>
+      <p class="name">
+        <label>收件人姓名</label>
+        <input id="name" value="" maxlength="10">
+      </p>
+      <p class="address">
+        <label>收货地址</label>
+        <textarea id="address" value="" placeholder="请填写详细地址" maxlength="100"></textarea>
+      </p>
+      <div id="msgSubmitBtn" class="btn big-yellow">提交</div>
+    </div>
+    <!-- 确认信息 -->
+    <div id="makesureMsg" class="box">
+      <h1>请确认奖品收货地址</h1>
+      <div class="msg">
+        <p><span>手机号码：</span><span id="sureTel"></span></p>
+        <p><span>收件人姓名：</span><span id="sureName"></span></p>
+        <p><span>收货地址：</span><span id="sureAddress"></span></p>
+      </div>
+      <div class="makesure-msg-btn">
+        <div id="reWriteBtn" class="btn small-purple">重新填写</div>
+        <div id="sureSubmitBtn" class="btn small-yellow">确认提交</div>
+      </div>
+    </div>
+    <!-- 已经收到信息 -->
+    <div id="getMsg" class="box">
+      <h1>已收到您的收货地址信息，活动结束后，运营小姐姐会给你发奖品哦~</h1>
+      <div id="sureBtn" class="btn big-yellow">确认</div>
+      <p>活动动态及结果将第一时间在公众号公布。</p>
+      <img src="./img/qrcode1.jpg" alt="">
+      <p>关注有象视频</p>
+    </div>
+    <!-- 没有投票机会 -->
+    <div id="noticket" class="box">
+      <h1>今天的投票机会已用完</h1>
+      <p>客官明天再来哦～</p>
+      <div id="noticketBtn" class="btn big-yellow">我知道了</div>
+    </div>
+    <!-- 没有抽奖机会 -->
+    <div id="nolottery" class="box">
+      <h1>抽奖机会已用完</h1>
+      <p>投完票后就可获得抽奖机会</p>
+      <div id="nolotteryBtn" class="btn big-yellow">我知道了</div>
+    </div>
+  </div>
+</div>
+  <script type="text/javascript" src='//dx-js-test.itangchao.me/video.min.js'></script>
+  <script src="//dx-js-test.itangchao.me/videojs-contrib-hls.min.js"></script>
+  <script src="//dx-js-test.itangchao.me/m3u8-parser.min.js"></script>
+  <script type="text/javascript" src='js/video.js'></script>
+  <script type="text/javascript" src='http://cdn.bootcss.com/axios/0.16.1/axios.min.js'></script>
+  <script type="text/javascript" src='js/countdown.js'></script>
+  <script type="text/javascript" src='js/index.js'></script>
+</body>
+</html>

@@ -1,0 +1,188 @@
+.wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: url('../../imgs/bg.png') repeat-y top fixed;
+  background-repeat: repeat-y;
+  background-repeat-y: repeat;
+  background-size: cover;
+  padding-bottom: 0.4rem;
+}
+
+.wrap .text {
+  width: 4rem;
+  position: absolute;
+  left: 0.8rem;
+  top: 0.866667rem;
+}
+
+.wrap .form {
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+  margin-top: 0.4rem;
+  background: url('../../imgs/form-bg.png');
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.wrap .form .form-item {
+  width: 7.2rem;
+  height: 0.533333rem;
+  margin: 0 auto;
+  margin-top: 0.133333rem;
+  padding: 0.066667rem 0.133333rem;
+  border: 2px solid rgb(162, 177, 202);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.wrap .form .form-item span {
+  vertical-align: top;
+  color: #fff;
+  margin-top: 0.133333rem;
+  display: inline-block;
+}
+
+[data-dpr="1"] .wrap .form .form-item span {
+  font-size: 14px;
+}
+
+[data-dpr="2"] .wrap .form .form-item span {
+  font-size: 28px;
+}
+
+[data-dpr="3"] .wrap .form .form-item span {
+  font-size: 42px;
+}
+
+.wrap .form .form-item input {
+  vertical-align: top;
+  height: 0.533333rem;
+  background: none;
+  border: none;
+  color: #fff;
+  outline: none;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+[data-dpr="1"] .wrap .form .form-item input {
+  font-size: 13px;
+}
+
+[data-dpr="2"] .wrap .form .form-item input {
+  font-size: 26px;
+}
+
+[data-dpr="3"] .wrap .form .form-item input {
+  font-size: 39px;
+}
+
+.wrap .form .long-item {
+  height: 1.733333rem;
+}
+
+.wrap .form .long-item textarea {
+  height: 1.333333rem;
+  width: 70%;
+  vertical-align: top;
+  background: none;
+  resize: none;
+  border: none;
+  color: #fff;
+  outline: none;
+}
+
+[data-dpr="1"] .wrap .form .long-item textarea {
+  font-size: 13px;
+}
+
+[data-dpr="2"] .wrap .form .long-item textarea {
+  font-size: 26px;
+}
+
+[data-dpr="3"] .wrap .form .long-item textarea {
+  font-size: 39px;
+}
+
+.wrap .notice1 {
+  margin-top: 5.733333rem;
+  color: #fff;
+  text-align: center;
+}
+
+[data-dpr="1"] .wrap .notice1 {
+  font-size: 14px;
+}
+
+[data-dpr="2"] .wrap .notice1 {
+  font-size: 28px;
+}
+
+[data-dpr="3"] .wrap .notice1 {
+  font-size: 42px;
+}
+
+.wrap .notice1 p {
+  line-height: 1.5;
+}
+
+.wrap .notice2 {
+  margin-top: 0.533333rem;
+  margin-left: 1.2rem;
+  text-align: left;
+  color: #fff;
+}
+
+[data-dpr="1"] .wrap .notice2 {
+  font-size: 13px;
+}
+
+[data-dpr="2"] .wrap .notice2 {
+  font-size: 26px;
+}
+
+[data-dpr="3"] .wrap .notice2 {
+  font-size: 39px;
+}
+
+.wrap .notice2 p {
+  line-height: 1.5;
+}
+
+.wrap .submit {
+  width: 90%;
+  height: 0.8rem;
+  margin: 0 auto;
+  margin-top: 0.133333rem;
+  line-height: 0.746667rem;
+  text-align: center;
+  cursor: pointer;
+}
+
+.wrap .submit button {
+  -webkit-appearance: none;
+  border: none;
+  margin-top: 0.066667rem;
+  color: #fff;
+  width: 100%;
+  letter-spacing: 0.133333rem;
+  background: url('../../imgs/submit.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+[data-dpr="1"] .wrap .submit button {
+  font-size: 16px;
+}
+
+[data-dpr="2"] .wrap .submit button {
+  font-size: 32px;
+}
+
+[data-dpr="3"] .wrap .submit button {
+  font-size: 48px;
+}

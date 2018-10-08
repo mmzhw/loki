@@ -1,0 +1,332 @@
+textarea {
+  outline: none;
+}
+.box {
+  width: 8.4rem;
+  display: none;
+  color: #fff;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  border-radius: 0.29333333333333333rem;
+  transform: translateX(-50%) translateY(-50%);
+  -o-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  z-index: 300;
+  background: #622FA0;
+}
+.playWrap {
+  position: absolute;
+  width: 8.3466666rem;
+  height: 4.16rem;
+  overflow: hidden;
+  top: 42.5%;
+  left: 51%;
+  margin-left: -4.1733333rem;
+  /*transform: translateX(-50%);*/
+  margin-left: -
+  user-select: none;
+  z-index: 10;
+}
+.video-js {
+  height: 4.16rem;
+  background: #000;
+  width: 8.3466666rem;
+}
+.step1 {
+  position: relative;
+  height: 15.14666666rem;
+  width: 100%;
+  background-color: #5F42B0;
+  background-image: url('../img/step1.jpg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.times-float {
+  width: 1.68rem;
+  position: relative;
+  float: right;
+  top: 7.4rem;
+  z-index: 10;
+}
+.times-float img {
+  width: 1.68rem;
+  height: auto;
+  position: absolute;
+}
+.lottery-text {
+  position: absolute;
+  font-size: 0.3333333333333333rem;
+  color: #fff;
+  top: 0.8rem;
+  left: 0.9rem;
+}
+.times-float .times {
+  position: absolute;
+  font-size: 0.3333333333333333rem;
+  color: #FFEBBE;
+  top: 1.2rem;
+  left: 0.9rem;
+}
+.times-float .times span.the-times {
+  font-size: 0.5rem;
+}
+#mask {
+  position: fixed;
+  z-index: 200;
+  left: 0;
+  top: 0;
+  right: 0;
+  opacity: 0.7;
+  background: #000;
+  display: none;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+#nolottery {
+  display: none;
+}
+.box h1{
+  width: 7.04rem;
+  margin: 1.1866666666666668rem auto 0;
+  text-align: center;
+  color: #FEE7A7;
+  font-size: 0.4266666666666667rem;
+}
+/*抽奖及抽奖活动说明*/
+#explanation h1 {
+  margin-top: 0.5866666666666667rem;
+  margin-bottom: 0.64rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#explanation .icon:first-child {
+  margin-right: 0.3em;
+}
+#explanation .icon:last-child {
+  margin-left: 0.15rem;
+}
+#explanation .icon {
+  width: 0.2rem;
+  height: 0.2rem;
+  transform:rotate(40deg);
+  margin: 0;
+  background: #FEE7A7;
+}
+#explanation p{
+  width: 6.4rem;
+  margin: 0.25333333333333335rem auto;
+  color: #FEE7A7;
+  font-size: 0.32rem;
+  line-height: 0.37333333333333335rem;
+}
+#explanation div {
+  margin-top: 0.8933333333333333rem;
+  margin-bottom: 0.8133333333333334rem;
+}
+/*抽奖机会*/
+#lottery h1 {
+  margin-top: 0.6266666666666667rem;
+}
+#lottery img {
+  width: 3.066666666666667rem;
+  height: 2.48rem;
+  display: block;
+  margin: 0.5866666666666667rem auto 0.76rem;
+}
+.lottery-btn div{
+  float: left;
+  margin-left: 1.04rem;
+  margin-bottom: 0.692rem;
+}
+.lottery-btn div:last-child{
+  margin-left: 0.5733333333333334rem;
+}
+
+/*获得奖品*/
+.awards {
+  width: 4.973333333333334rem;
+  height: auto;
+  margin: 0.5466666666666666rem auto;
+}
+.awards img {
+  width: 4.973333333333334rem;
+  height: auto;
+}
+.awards-name {
+  width: 1.6666666666666667rem;
+  height: 1.6666666666666667rem;
+  position: relative;
+  bottom: 1.6666666666666667rem;
+  left: 2.5733333333333333rem;
+  color: #fff;
+  line-height: 1.6666666666666667rem;
+  text-align: center;
+  font-weight: 600;
+  background-image: url('../image/icon-reward.png');
+  background-size: 1.6666666666666667rem auto;
+  background-repeat: no-repeat;
+}
+.reward_msg {
+  display: none;
+}
+#reward h1 {
+  margin-top: 0.56rem;
+  margin-bottom: 0.13333333333333333rem;
+}
+#reward p{
+  width: 7rem;
+  margin: 0.5333333333333333rem auto 0;
+  color: #FEE7A7;
+  font-size: 0.32rem;
+  line-height: 0.45rem;
+}
+#writeMsgBtn {
+  margin-top: 1.0266666666666666rem;
+  margin-bottom: 0.96rem;
+}
+/*没有中奖*/
+#no-reward img {
+  width: 4.973333333333334rem;
+  height: auto;
+  display: block;
+  margin: 0.41333333333333333rem auto;
+}
+#no-reward p {
+  text-align: center;
+  color: #FEE7A7;
+  font-size: 0.32rem;
+}
+#no-reward div {
+  margin-top: 0.5066666666666667rem;
+  margin-bottom: 0.8133333333333334rem;
+}
+/*填写信息弹框*/
+#writeMsg p {
+  width: 7.293333333333333rem;
+  line-height: 1.0666666666666667rem;
+  display: flex;
+  justify-content: space-between;
+  color: #FEE7A7;
+  font-size: 0.3413333333333334rem;
+}
+.tel {
+  margin: 1.08rem auto 0;
+}
+.name {
+  margin: 0.30666666666666664rem auto 0;
+}
+.address {
+  height: 1.92rem;
+  margin: 0.30666666666666664rem auto 1.1333333333333333rem;
+}
+#writeMsg p input, #writeMsg p textarea {
+  width: 4.866666666666666rem;
+  height: 0.64rem;
+  padding: 0.21333333333333335rem 0.24rem;
+  border-radius: 6px;
+  border: 1px solid #FEE7A7;
+  font-size: 0.3333333333333333rem;
+  background: #622FA0;
+  color: #FEE7A7;
+}
+#writeMsg h1 {
+  font-weight: 400;
+}
+#writeMsg p textarea {
+  height: 1.4933333333333334rem;
+}
+#writeMsg > div {
+  margin-bottom: 0.9066666666666666rem;
+}
+/*确认信息弹框*/
+#makesureMsg .msg{
+  width: 7.1866666666666665rem;
+  margin: 0.7733333333333333rem auto 0.9733333333333334rem;
+  border-radius: 6px;
+  border: 1px solid #FEE7A7;
+  font-size: 0.3413333333333334rem;
+  color: #FEE7A7;
+}
+.msg p {
+  margin-left: 0.4666666666666667rem;
+  margin-top: 0.22666666666666666rem;
+  line-height: 0.48rem;
+}
+.msg p:first-child {
+  margin-top: 0.6933333333333334rem;
+}
+.msg p:last-child {
+  margin-bottom: 0.6933333333333334rem;
+}
+.makesure-msg-btn div{
+  float: left;
+  margin-left: 0.8133333333333334rem;
+  margin-bottom: 1.1733333333333333rem;
+}
+.makesure-msg-btn div:last-child{
+  margin-left: 0.6133333333333333rem;
+}
+/*已经收到信息弹框*/
+#getMsg h1{
+  margin-bottom: 0.9866666666666667rem;
+}
+#getMsg p {
+  color: #FFA8AD;
+  font-size: 12px;
+  text-align: center;
+  margin-top: 0.9733333333333334rem;
+}
+#getMsg img {
+  width: 2.3066666666666666rem;
+  height: auto;
+  display: block;
+  margin: 0.38666666666666666rem auto 0;
+}
+#getMsg p:last-child {
+  color: #FF9C1B;
+  margin: 0.18666666666666668rem 0 0.3466666666666667rem 0;
+}
+/*没有投票机会弹框*/
+/*没有投票机会弹框*/
+#noticket h1, #nolottery h1 {
+  /*margin-bottom: 0.64rem;*/
+  font-size: 0.4533333333333333rem;
+}
+#noticket div, #nolottery div {
+  margin-bottom: 0.64rem;
+}
+#noticket p, #nolottery p {
+  text-align: center;
+  margin-bottom: 0.64rem;
+  font-size: 0.4rem;
+  color: #FEE7A7;
+}
+/*弹框按钮样式*/
+.btn {
+  height: 1.0666666666666667rem;
+  margin: 0 auto;
+  background: #FF9C1B;
+  color: #fff;
+  font-size: 0.4rem;
+  text-align: center;
+  line-height: 1.0666666666666667rem;
+  border-radius: 1.3333333333333333rem;
+  border: none;
+}
+.small-yellow {
+  width: 3.066666666666667rem;
+}
+.big-yellow {
+  width: 4.8rem;
+  margin: 0 auto;
+}
+.small-purple {
+  width: 3.066666666666667rem;
+  background: #924AE9;
+  color: #FFD5D7;
+}

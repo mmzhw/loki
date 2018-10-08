@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta charset="utf-8">
+  <meta name="apple-mobile-web-app-capable" content="yes"/>
+  <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+  <meta content="telephone=no" name="format-detection"/>
+  <!-- UC默认竖屏` UC强制全屏 -->
+  <meta name="full-screen" content="yes"/>
+  <meta name="browsermode" content="application"/>
+  <!-- QQ强制竖屏` QQ强制全屏 -->
+  <meta name="x5-orientation" content="portrait"/>
+  <meta name="x5-fullscreen" content="true"/>
+  <meta name="x5-page-mode" content="app"/>
+  <link rel="shortcut icon" href=/static/favicon.png>
+  <title>太古，开宗立派</title>
+  <script>
+    ;(function(win, lib) {
+      var doc = win.document;
+      var docEl = doc.documentElement;
+      var metaEl = doc.querySelector('meta[name="viewport"]');
+      var flexibleEl = doc.querySelector('meta[name="flexible"]');
+      var dpr = 0;
+      var scale = 0;
+      var tid;
+      var flexible = lib.flexible || (lib.flexible = {});
+
+      if (metaEl) {
+          console.warn('将根据已有的meta标签来设置缩放比例');
+          var match = metaEl.getAttribute('content').match(/initial\-scale=([\d\.]+)/);
+          if (match) {
+              scale = parseFloat(match[1]);
+              dpr = parseInt(1 / scale);
+          }
+      } else if (flexibleEl) {
+          var content = flexibleEl.getAttribute('content');
+          if (content) {
+              var initialDpr = content.match(/initial\-dpr=([\d\.]+)/);
+              var maximumDpr = content.match(/maximum\-dpr=([\d\.]+)/);
+              if (initialDpr) {
+                  dpr = parseFloat(initialDpr[1]);
+                  scale = parseFloat((1 / dpr).toFixed(2));
+              }
+              if (maximumDpr) {
+                  dpr = parseFloat(maximumDpr[1]);
+                  scale = parseFloat((1 / dpr).toFixed(2));
+              }
+          }
+      }
+
+      if (!dpr && !scale) {
+          var isAndroid = win.navigator.appVersion.match(/android/gi);
+          var isChrome = win.chrome;
+          var isIPhone = win.navigator.appVersion.match(/iphone/gi);
+          var devicePixelRatio = win.devicePixelRatio;
+          var isX5 = /TBS\/\d+/.test(win.navigator.userAgent)
+          if (isIPhone || isChrome || isX5) {
+              // iOS下，对于2和3的屏，用2倍的方案，其余的用1倍方案
+              if (devicePixelRatio >= 3 && (!dpr || dpr >= 3)) {
+                  dpr = 3;
+              } else if (devicePixelRatio >= 2 && (!dpr || dpr >= 2)){
+                  dpr = 2;
+              } else {
+                  dpr = 1;
+              }
+          } else {
+              // 其他设备下，仍旧使用1倍的方案
+              dpr = 1;
+          }
+          scale = 1 / dpr;
+      }
+
+      docEl.setAttribute('data-dpr', dpr);
+      if (!metaEl) {
+          metaEl = doc.createElement('meta');
+          metaEl.setAttribute('name', 'viewport');
+          metaEl.setAttribute('content', 'initial-scale=' + scale + ', maximum-scale=' + scale + ', minimum-scale=' + scale + ', user-scalable=no');
+          if (docEl.firstElementChild) {
+              docEl.firstElementChild.appendChild(metaEl);
+          } else {
+              var wrap = doc.createElement('div');
+              wrap.appendChild(metaEl);
+              doc.write(wrap.innerHTML);
+          }
+      }
+
+      function refreshRem(){
+          var width = docEl.getBoundingClientRect().width;
+          if (width / dpr > 540) {
+              width = 540 * dpr;
+          }
+          var rem = width / 10;
+          docEl.style.fontSize = rem + 'px';
+          flexible.rem = win.rem = rem;
+      }
+
+      win.addEventListener('resize', function() {
+          clearTimeout(tid);
+          tid = setTimeout(refreshRem, 300);
+      }, false);
+      win.addEventListener('pageshow', function(e) {
+          if (e.persisted) {
+              clearTimeout(tid);
+              tid = setTimeout(refreshRem, 300);
+          }
+      }, false);
+
+      if (doc.readyState === 'complete') {
+          doc.body.style.fontSize = 12 * dpr + 'px';
+      } else {
+          doc.addEventListener('DOMContentLoaded', function(e) {
+              doc.body.style.fontSize = 12 * dpr + 'px';
+          }, false);
+      }
+
+
+      refreshRem();
+
+      flexible.dpr = win.dpr = dpr;
+      flexible.refreshRem = refreshRem;
+      flexible.rem2px = function(d) {
+          var val = parseFloat(d) * this.rem;
+          if (typeof d === 'string' && d.match(/rem$/)) {
+              val += 'px';
+          }
+          return val;
+      }
+      flexible.px2rem = function(d) {
+          var val = parseFloat(d) / this.rem;
+          if (typeof d === 'string' && d.match(/px$/)) {
+              val += 'rem';
+          }
+          return val;
+      }
+
+    })(window, window['lib'] || (window['lib'] = {}));
+  </script>
+  <style>a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}</style>
+  <link rel="stylesheet" href="dist/css/entered.css">
+</head>
+<body>
+  <div class="wrap">
+    <img src="imgs/logo.png" class="text" alt="">
+    <div class="notice1">
+        <p>授课时间：2017年8月31日9:00-12:00</p>
+        <p>授课地点：金诚集团5楼阶梯教室（限制170人）</p>
+    </div>
+    <div class="form">
+        <div class="form-item">
+            <span>姓&emsp;&emsp;名：</span>
+            <input type="text" id='name'>
+        </div>
+        <div class="form-item">
+            <span>工&emsp;&emsp;号：</span>
+            <input type="number" id='no'>
+        </div>
+        <div class="form-item">
+            <span>公司邮箱：</span>
+            <input type="email" id='email'>
+        </div>
+        <div class="form-item">
+            <span>联系方式：</span>
+            <input type="text" maxlength="11" id='mobile'>
+        </div>
+        <div class="form-item long-item">
+            <span>入门理由：</span>
+            <textarea type="text" id='content'></textarea>
+        </div>
+    </div>
+    <div class="submit">
+      <button id="submit">报名已截止</button>
+    </div>
+    <div class="notice2">
+        <p>课堂须知</p>
+        <p>金诚集团所有员工，无论是否转正，不设学历设置</p>
+        <p>如有宗教信仰，请另外注明</p>
+        <p>报名成功者三天内将在邮箱收到课堂入场券</p>
+    </div>
+  </div>
+
+  <script src="./dist/js/axios.min.js"></script>
+  <script src='./dist/js/bundle.js'></script>
+</body>
+</html>

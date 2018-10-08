@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>有象视频</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+<body>
+  <!--a href="http://dx-downloads-test.itangchao.me/daxiang-live-A_OFFICAL-release.apk">下载安卓</a>
+  <a href="https://itunes.apple.com/us/app/id1235011792?l=zh&ls=1&mt=8">下载IOS</a-->
+  <script>
+    (function() {
+      var isMobile = {
+        Android: function() {
+            return /Android/i.test(navigator.userAgent)
+        },
+        iOS: function() {
+            return /iPhone|iPad|iPod/i.test(navigator.userAgent)
+        }
+      }
+      if(isMobile.Android()){
+        // location.href = 'http://dx-downloads-test.itangchao.me/daxiang-live-A_OFFICAL-release.apk'
+        location.href = 'http://a.app.qq.com/o/simple.jsp?pkgname=com.daxiang.live'
+      }
+      if(isMobile.iOS()){
+        location.href = 'https://itunes.apple.com/us/app/id1235011792?l=zh&ls=1&mt=8'
+      }
+    })()
+  </script>
+</body>
+</html>

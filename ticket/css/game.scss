@@ -1,0 +1,132 @@
+.progress {
+  width: 512px;
+  margin: 120px auto 58px;
+  img {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+  .progress-bar {
+    overflow: hidden;
+    width: 468px;
+    height: 14px;
+    margin: 8px auto;
+    border-radius: 9px;
+    border: 1px solid #EE2B4F;
+    background: #490707;
+    #progress-content {
+      width: 0;
+      height: 14px;
+      border-radius: 7px;
+      background: #EE2B4F;
+    }
+  }
+}
+
+.star-pic {
+  position: relative;
+  width: 530px;
+  margin: 0 auto;
+  &::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 520px;
+    height: 650px;
+    border: 1px solid #BF9200;
+    top: 10px;
+    left: 10px;
+    z-index: -1;
+  }
+  .pic-corner {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background: #EE2B4F;
+    color: #FFF;
+    font-size: 30px;
+  }
+  img {
+    width: 520px;
+  }
+}
+
+@keyframes loveFly {
+  0% {
+    transform: translate(0, 0) scale(0.2);
+  }
+  35% {
+    transform: translate(-80px, -250px) scale(1);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translate(0, -500px) scale(0.5);
+    opacity: 0;
+  }
+}
+
+@keyframes loveFlyOppo {
+  0% {
+    transform: translate(0, 0) scale(0.2);
+  }
+  35% {
+    transform: translate(80px, -250px) scale(1);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translate(0, -500px) scale(0.5);
+    opacity: 0;
+  }
+}
+
+.click-area {
+  position: relative;
+  width: 183px;
+  margin: 50px auto 0;
+  img.lip {
+    position: absolute;
+    top: 30px;
+    left: 23px;
+    width: 137px;
+    &.lip-fly {
+      animation: loveFly 2s;
+    }
+    &.lip-fly-oppo {
+      animation: loveFlyOppo 2s;
+    }
+  }
+  .click-button {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 183px;
+    background: url(../../img/kiss-red-2.png) no-repeat;
+    border: none;
+    z-index: 2;
+    user-select: none;
+    -webkit-touch-callout: none;
+  }
+  .click-note {
+    color: #EE2B4F;
+    font-size: 24px;
+    text-align: center;
+    margin-top: 12px;
+  }
+}
+
+#alert-note {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 25px;
+  font-size: 35px;
+  color: #EE2B4F;
+  background: #FFF;
+  opacity: 0.9;
+  white-space: nowrap;
+  border-radius: 11px;
+}

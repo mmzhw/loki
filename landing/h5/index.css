@@ -1,0 +1,347 @@
+body {
+  background: #000;
+  font-family: PingFang SC,Microsoft YaHei,Arial,Helvetica Neue Light,Source Han Sans CN,sans-serif;
+  -webkit-overflow-scrolling: touch;
+  overflow-y: scroll;
+  margin: 0;
+}
+.clearfix {
+  display: inline-block
+}
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: ' ';
+  clear: both;
+  height: 0;
+}
+a {
+  text-decoration: none;
+}
+.banner {
+  height: 553px;
+  width: 100%;
+  background-image: url('../../assets/banner.png');
+  background-size: 95%;
+  background-position: 20px 20px;
+  background-repeat: no-repeat;
+  position: relative;
+  padding-bottom: 40px;
+}
+.countdown {
+  position: absolute;
+  top: 475px;
+  left: 30px;
+  color: #FFFFFF;
+  font-size: 18px;
+}
+.util {
+  position: absolute;
+  top: 430px;
+  left: 35px;
+  color: #F9BE00;
+  font-size: 24px;
+}
+.time {
+  font-size: 36px;
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  margin-right: 4px;
+  margin-left: 4px;
+  color: #F9BE00;
+  border: 3px solid #EA294E;
+  border-radius: 8px;
+}
+.buy {
+  display: block;
+  position: absolute;
+  top: 550px;
+  left: 87px;
+  background: #F9BE00;
+  width: 195px;
+  height: 40px;
+  line-height: 40px;
+  color: #000000;
+  font-size: 24px;
+  border-radius: 8px;
+  text-align: center;
+}
+.playWrap {
+  width: 702px;
+  position: relative;
+  overflow: hidden;
+  height: 396px;
+  margin: 30px auto 40px;
+  background: #000;
+  user-select: none;
+  border: 12px solid #F9BE00;
+  border-radius: 9px;
+  z-index: 10;
+}
+.logo {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 120px;
+  height: 33px;
+  background-image: url('../../assets/logo.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.download-wrap {
+  position: relative;
+  width: 520px;
+  height: 80px;
+  margin: 0 auto;
+}
+.download {
+  position: absolute;
+  width: 520px;
+  height: 80px;
+  border: 1px solid #F9BE00;
+  border-radius: 5px;
+  z-index: 100;
+}
+.download img {
+  display: block;
+  float: left;
+  margin-top: 8px;
+  margin-left: 20px;
+}
+.download span {
+  color: #fff;
+  font-size: 26px;
+  line-height: 80px;
+  margin-left: 20px;
+}
+.fuli {
+  margin-top: 50px;
+  background-image: url('../../assets/line.png');
+  background-repeat: no-repeat;
+  background-size: 537px 5px;
+  background-position: center;
+  color: #F9BE00;
+  height: 65px;
+  width: 100%;
+  text-align: center;
+  font-size: 46px;
+  margin-bottom: 30px;
+}
+.fuli-item {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  position: relative;
+  float: left;
+}
+.radish {
+  position: absolute;
+  left: 60px;
+  height: 80px;
+  width: 35px;
+  top: -5px;
+  background-image: url('../../assets/radish.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.wrap {
+  margin-left: 100px;
+  float: left;
+  color: #fff;
+  display: inline-block;
+}
+.title {
+  float: left;
+  font-size: 24px;
+  padding: 3px 5px;
+  border-bottom: 2px solid #F9BE00;
+}
+.content, .contents {
+  color: #BDBBBD;
+  position: relative;
+  clear: left;
+  padding: 0 5px;
+  width: 510px;
+  line-height: 30px;
+  margin-top: 10px;
+  float: left;
+  font-size: 20px;
+}
+.contents {
+  width: 570px;
+}
+.qrcode {
+  clear: both;
+}
+.qrcode img {
+  display: block;
+  margin: 0 auto;
+  padding: 50px;
+  width: 260px;
+  height: 260px;
+}
+.pics ul {
+  padding: 0;
+  margin: 20px auto 0;
+  width: 100%;
+  text-align: center;
+}
+.pics li {
+  margin-left: 22px;
+  margin-right: 22px;
+  display: inline-block;
+}
+.pics img {
+  width: 120px;
+  height: 120px;
+}
+.pics .button {
+  text-align:center;
+  width: 120px;
+  height: 23px;
+  font-size: 18px;
+  color: #000000;
+  margin-top: 5px;
+  background: #F9BE00;
+  border-radius: 4px;
+}
+.item {
+  margin-bottom: 30px;
+  position: relative;
+  height: 300px;
+}
+.item img {
+  position: absolute;
+  top: 20px;
+  left: 35%;
+  height: 99px;
+  width: 109px;
+}
+.text {
+  color: #fff;
+  font-size: 24px;
+  position: absolute;
+  top: 90px;
+  left: 55%;
+}
+.gray {
+  color: #A6A4A6;
+}
+.bottom {
+  position: absolute;
+  left: 50%;
+  margin-left: -150px;
+  top: 150px;
+  width: 301px;
+  height: 172px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.bottom p {
+  line-height: 12px;
+  text-indent: 60px;
+  color: #fff;
+  font-size: 18px;
+}
+.bg1 {
+  background-image: url('../../assets/kuang1.png');
+}
+.bg2 {
+  background-image: url('../../assets/kuang2.png');
+}
+.cover {
+  background-image: url('../../assets/wenhao.png');
+  background-size: 79px 119px;
+  background-repeat: no-repeat;
+  background-position: center;
+  top: 5px;
+  left: 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  width: 240px;
+  height: 150px;
+}
+.bg2 .p {
+  margin-top: 30px;
+}
+.Time {
+  display: block;
+  width: 670px;
+  height: 1254px;
+  margin: 0 auto 100px;
+  background-image: url('../../assets/time.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.weibo {
+  position: absolute;
+  right: -70px;
+  top: 5px;
+  display: inline-block;
+  height: 23px;
+  width: 63px;
+  background-image: url('../../assets/follow.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.footer {
+  height: 160px;
+  background: #222222;
+}
+.footer-top {
+  text-align: center;
+  height: 90px;
+  line-height: 50px;
+}
+.footer-top ul {
+  text-align: center;
+}
+.footer-top li {
+  margin-left: 10px;
+  margin-right: 10px;
+  float: left;
+  list-style-type: none;
+}
+.footer-top li a {
+  color: #9A9A9A;
+  font-size: 16px;
+}
+.footer-bottom {
+  box-shadow: 0 1px 1px 1px #979797;
+  height: 70px;
+  color: #595959;
+  font-size: 12px;
+  position: relative;
+}
+.highlight {
+  color: #FABE00 !important;
+}
+.left {
+  color: #595959;
+  position: absolute;
+  left: 130px;
+  bottom: 30px;
+}
+.right {
+  position: absolute;
+  right: 60px;
+  bottom: 30px;
+}
+.center {
+  position: absolute;
+  left: 50%;
+  bottom: 30px;
+}
+.support {
+  margin: 50px auto 50px;
+  width: 525px;
+  height: 1182px;
+  background-image: url('../../assets/support.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.yellow {
+  color: #F9BE00;
+}

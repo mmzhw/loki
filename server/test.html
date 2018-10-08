@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .arrow{
+            position: absolute;
+            left: 500px;
+            top: 400px;
+            width: 100px;
+            height: 3px;
+            background-color: #00B7FF;
+            transition: transform 1s;
+        }
+        @keyframes rotate360{
+            from{transform: rotate(0deg);}
+            to{transform: rotate(360deg);}
+        }
+        .rotate{
+            transform-origin: left center;
+            animation: rotate360 2s linear infinite;
+        }
+    </style>
+</head>
+<body>
+    <div class="arrow"></div>
+    <script>
+        var arrow = document.querySelector('.arrow')
+//        function updateSpeed(duration){
+//          arrow.style['animation-duration'] = duration + 's'
+//        }
+//        setTimeout(() => {
+//          updateSpeed(.3)
+//        }, 0)
+//        setTimeout(() => {
+//          updateSpeed(1)
+//        }, 3000)
+//        setTimeout(() => {
+//          updateSpeed(0)
+//          arrow.style.transform = 'rotate(180deg)';
+//        }, 4000)
+
+        let curDeg = 0;
+        function updateRotate(duration){
+//          360 / (duration / 1000 / 60)
+          let rotateAngle = (60 / duration) / 1000
+          curDeg += rotateAngle;
+          console.log(`rotate(${curDeg}deg)`)
+          arrow.style['transform'] = `rotate(${curDeg}deg)`;
+        }
+
+        requestAnimationFrame(function animation(){
+          updateRotate(2000)
+          requestAnimationFrame(animation)
+        })
+//        arrow.style['transform'] = 'rotate(120deg)'
+    </script>
+</body>
+</html>
